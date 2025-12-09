@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈爾濱住宿精選方案對比</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+        
+        <!-- Header Title -->
+        <div class="bg-slate-900 text-white p-8 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 tracking-wide relative z-10">哈爾濱住宿精選方案</h1>
+            <p class="text-slate-300 text-sm md:text-base relative z-10">為您精選兩間不同定位的優質飯店，滿足不同的旅遊需求</p>
+        </div>
+
+        <!-- Mobile/Desktop Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+
+            <!-- Comparison Categories (Hidden on mobile, visible on desktop col-span-2) -->
+            <!-- Note: For better responsiveness, we integrate labels into the cards on mobile -->
+
+            <!-- Option A: Rich Hotel -->
+            <div class="md:col-span-6 border-b md:border-b-0 md:border-r border-gray-200 bg-orange-50/30 relative">
+                <!-- Hotel Image -->
+                <img src="哈爾濱瑞辰酒店.webp" alt="哈爾濱瑞辰酒店外觀" class="w-full h-48 object-cover">
+                <!-- Hotel Header -->
+                <div class="p-6 text-center border-b border-gray-100 bg-white relative">
+                    <p class="text-gray-500 text-sm">Rich Hotel Harbin</p>
+                </div>
+
+                <!-- Content Rows -->
+                <div class="divide-y divide-gray-100">
+                    <!-- Location -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mr-4 shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">地理位置</h3>
+                                <p class="font-bold text-gray-800">松北區 (江北新區)</p>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    <span class="text-orange-600 font-medium"><i class="fas fa-snowflake mr-1"></i>近冰雪大世界</span><br>
+                                    離主要景區極近，交通順暢
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mr-4 shrink-0">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">基礎房型</h3>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-bold text-gray-800 text-lg">28-30㎡</span>
+                                    <span class="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">標準空間</span>
+                                </div>
+                                <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                    <li><i class="fas fa-check text-orange-400 mr-1"></i>現代溫馨風格</li>
+                                    <li><i class="fas fa-check text-orange-400 mr-1"></i>智能客控 (電動窗簾/藍牙)</li>
+                                    <li class="text-gray-400"><i class="fas fa-times mr-1"></i>多為淋浴間 (無浴缸)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mr-4 shrink-0">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">飯店設施</h3>
+                                <p class="font-bold text-gray-800">實用便捷導向</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">健身房</span>
+                                    <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">自助洗衣</span>
+                                    <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">親子樂園</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-2 italic">※ 無游泳池</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Surroundings -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mr-4 shrink-0">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">周邊機能</h3>
+                                <p class="font-bold text-gray-800">位於世茂大道商圈</p>
+                                <p class="text-sm text-gray-600 mt-1">周邊有「玉龍灣商業街」、大潤發超市與各式餐館。前往萬象匯/融創茂需短程車程。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Price/Verdict -->
+                     <div class="p-6 bg-orange-50 text-center">
+                        <h3 class="text-sm font-bold text-gray-500 mb-2">推薦客群</h3>
+                        <p class="text-gray-800 font-medium">親子遊客、年輕情侶</p>
+                        <p class="text-orange-600 font-bold mt-1 text-lg">專程玩雪 & 高 CP 值</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option B: Hilton -->
+            <div class="md:col-span-6 bg-blue-50/30">
+                <!-- Hotel Image -->
+                <img src="哈爾濱會展中心希爾頓酒店.jpg" alt="哈爾濱會展中心希爾頓酒店客房" class="w-full h-48 object-cover">
+                <!-- Hotel Header -->
+                <div class="p-6 text-center border-b border-gray-100 bg-white relative">
+                    <p class="text-gray-500 text-sm">Hilton Harbin Exhibition Center</p>
+                </div>
+
+                <!-- Content Rows -->
+                <div class="divide-y divide-gray-100">
+                    <!-- Location -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">地理位置</h3>
+                                <p class="font-bold text-gray-800">南崗區 (市中心)</p>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    <span class="text-blue-600 font-medium"><i class="fas fa-building mr-1"></i>商務核心地帶</span><br>
+                                    鄰近會展中心、火車站，交通樞紐
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">基礎房型</h3>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-bold text-gray-800 text-lg">45㎡</span>
+                                    <span class="text-xs text-white bg-blue-600 px-2 py-0.5 rounded">超大空間</span>
+                                </div>
+                                <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                    <li><i class="fas fa-check text-blue-500 mr-1"></i>奢華商務風格、大氣</li>
+                                    <li><i class="fas fa-check text-blue-500 mr-1"></i>舒達名床、獨立沙發區</li>
+                                    <li><i class="fas fa-bath text-blue-500 mr-1"></i><span class="font-bold text-blue-700">標配浴缸</span> (乾濕分離)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">飯店設施</h3>
+                                <p class="font-bold text-gray-800">全方位五星享受</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-xs bg-white border border-blue-200 text-blue-700 px-2 py-1 rounded">恆溫泳池</span>
+                                    <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">行政酒廊</span>
+                                    <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">SPA中心</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-2">※ 設施完整度極高</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Surroundings -->
+                    <div class="p-5 hover:bg-white transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 shrink-0">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">周邊機能</h3>
+                                <p class="font-bold text-gray-800">正對面即是「會展中心」</p>
+                                <p class="text-sm text-gray-600 mt-1">哈爾濱紅博購物中心、紅博會展購物公園(地下)、藝匯家商場等均位於此區域。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price/Verdict -->
+                    <div class="p-6 bg-blue-50 text-center">
+                         <h3 class="text-sm font-bold text-gray-500 mb-2">推薦客群</h3>
+                         <p class="text-gray-800 font-medium">商務客、家庭度假</p>
+                         <p class="text-blue-800 font-bold mt-1 text-lg">重視睡眠品質 & 空間享受</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="bg-gray-50 p-4 border-t border-gray-200 text-center">
+            <p class="text-xs text-gray-500">※ 實際房況與設施開放時間請依飯店當日公告為準</p>
+        </div>
+    </div>
+
+</body>
+</html>
